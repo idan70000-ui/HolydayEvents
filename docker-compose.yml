@@ -6,6 +6,6 @@ services:
       context: ./holyday.mission
     container_name: holyday.mission
     ports:
-      - "3000:3000"
+      - "3000"
     
     restart: unless-stopped
