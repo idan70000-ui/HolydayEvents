@@ -1,0 +1,18 @@
+pipeline
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    sh 'docker build -t holyday-mission:latest .'
+                }
+            }
+        }
+        stage('Run') {
+            steps {
+                script {
+                    sh 'docker-compose up -d'
+                }
+            }
+        }
+    }
