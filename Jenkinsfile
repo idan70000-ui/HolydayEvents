@@ -41,7 +41,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker-compose up -d --build'
+                sh 'ansible-playbook -i inventory.ini setup.yml'
+                sh 'ansible-playbook -i inventory.ini deploy.yml'
             }
         }
     }
