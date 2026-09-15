@@ -39,15 +39,23 @@
       pause:
         seconds: 5
 
-    - name: Verify the application responds
+        - name: Verify the application responds
       uri:
-        url: "http://localhost:{{ app_port }}/"
+        url: "http://localhost:{{ app_port }}/health"
         status_code: 200
+        return_content: yes
       register: health_check
       retries: 5
       delay: 3
       until: health_check.status == 200
 
+    - name: Confirm health check reports healthy status
+      assert:
+        that:
+          - "'healthy' in health_check.content"
+        fail_msg: "Health check did not report a healthy status"
+        success_msg: "Health check confirmed the application is healthy"
+
     - name: Show health check result
       debug:
-        msg: "Application is up and responding on port {{ app_port }}"
+        msg: "Application is up and healthy on port {{ app_port }} ({{ health_check.content }})"
