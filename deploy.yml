@@ -59,3 +59,7 @@
     - name: Show health check result
       debug:
         msg: "Application is up and healthy on port {{ app_port }} ({{ health_check.content }})"
+
+
+
+        
