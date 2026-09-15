@@ -39,7 +39,7 @@
       pause:
         seconds: 5
 
-        - name: Verify the application responds
+    - name: Verify the application responds
       uri:
         url: "http://localhost:{{ app_port }}/health"
         status_code: 200
@@ -62,4 +62,4 @@
 
 
 
-        
+
