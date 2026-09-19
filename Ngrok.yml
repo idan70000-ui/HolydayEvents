@@ -1,9 +1,6 @@
 version: "2"
 authtoken: 3JYO1OOVGkRQWeQlkcO9Vy9W7Qj_SuyNWFjYCY4yxFxZhJrV
 tunnels:
-  jenkins:
-    addr: 8080
+  holyday-mission:
     proto: http
-  app:
     addr: 3001
-    proto: http

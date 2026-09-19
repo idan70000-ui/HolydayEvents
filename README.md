@@ -60,5 +60,5 @@ Deploy – זה השלב המעניין ביותר: Jenkins לא מריץ את �
 
 
 ngrok:
-https://immortal-scoff-stammer.ngrok-free.dev - jenkins
+https://immortal-scoff-stammer.ngrok-free.dev 
        
