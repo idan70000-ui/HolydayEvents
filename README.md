@@ -56,3 +56,8 @@ Build Docker Image – בונה Docker Image חדש מהקוד, לפי ההור�
 Tag Image – נותן ל-Image שם/תווית ברור (עם מספר ה-build), כדי שאפשר יהיה לזהות אותו בעתיד.
 Push to Registry – דוחף את ה-Image המוכן ל-Docker Hub, שהוא ה"מחסן" הציבורי שבו שומרים Images מוכנים לשימוש.
 Deploy – זה השלב המעניין ביותר: Jenkins לא מריץ את האפליקציה בעצמו, אלא קורא ל-Ansible שיעשה את זה עבורו על שרת אחר (ראו הרחבה למטה).
+
+
+
+ngrok:
+https://immortal-scoff-stammer.ngrok-free.dev - jenkins
