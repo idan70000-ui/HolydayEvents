@@ -1,4 +1,3 @@
-@"
 version: "2"
 authtoken: 3JYO1OOVGkRQWeQlkcO9Vy9W7Qj_SuyNWFjYCY4yxFxZhJrV
 tunnels:
@@ -8,4 +7,3 @@ tunnels:
   app:
     addr: 3001
     proto: http
-"@ | Out-File -FilePath ngrok.yml -Encoding utf8
